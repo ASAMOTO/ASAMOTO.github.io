@@ -47,7 +47,7 @@ header p{
 }
 
 /*****BRANDING*****/
-#branding{
+#branding_pc{
     display: block;
     width: 60%;
     margin-left: 20%;
@@ -55,10 +55,12 @@ header p{
     margin-bottom: 15px;
     float: left;
 }
-#branding img{
+#branding_pc img{
     width: 100%;
 }
-
+#branding_sp{
+    display: none;
+}
 /*****NAV*****/
 nav{
     width: 100%;
@@ -177,7 +179,11 @@ section h2{
     opacity: 0.5;
     transition: all 0.5s;
 }
-
+.contact_box , .photo_group{
+    width: 72%;
+    float: left;
+    overflow: hidden;
+}
 .contact_box h2{
     margin-bottom: 30px;
 }
@@ -274,4 +280,322 @@ footer{
 footer address{
     color: #fff;
     letter-spacing: 5px;
+}
+
+/*========================スマホ===========================*/
+
+@media only screen and (max-width:480px){
+    body{
+font-family: "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+font-size: 1em;
+margin:0;
+color:#313131;
+}
+
+img{
+outline:none;
+border-style:none;
+}
+
+.attention{
+    color: red;
+    font-weight: bold;
+}
+
+/*****HEADER*****/
+header{
+    display: block;
+    width:100%;
+    margin-left: 0%;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    text-align: center;
+}
+header h1{
+    width: 80%;
+    font-size:80%;
+    color: orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border:2px solid orange;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    font-weight:600;
+    float: none;
+    text-align: center;
+    margin-left: calc(10% - 4px);
+}
+
+
+/*****BRANDING*****/
+#branding_pc{
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-left: 0%;
+    float: left;
+}
+
+#branding_sp{
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+}
+#branding_sp img{
+    width: 100%;
+}
+#branding_sp p{
+    font-size: 100%;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+#branding_sp a{
+    width: 80%;
+    text-decoration: none;
+    color: orange;
+    background-color: #fff;
+    letter-spacing: 0.2em;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+/*****NAV*****/
+nav{
+    display: none;
+    width: 100%;
+    border-top: 1px solid orange;
+    border-bottom: 2px solid orange;
+    margin-bottom: 15px;
+    overflow: hidden;
+    float: left
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #313131;
+    font-size: 80%;
+    letter-spacing: 5px;
+    font-weight: 400;
+    line-height: 45px;
+}
+nav a:hover{
+    color: #fff;
+    background-color: orange;
+    transition: all 0.5s;
+}
+nav ul{
+    width: 100%;
+    margin-left: 0%;
+}
+nav li{
+    width: calc(100% - 2px);
+    border-left: 1px solid orange;
+    text-align: center;
+    float: left;
+}
+nav li:last-child{
+    border-right: 1px solid orange;
+}
+
+/*****CONTENTINER*****/
+#contentiner{
+    width: 90%;
+    margin-left: 5%;
+    float: left;
+}
+
+/*****ARTICLE*****/
+section{
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+    float: left;
+}
+section h2{
+    font-size: 110%;
+    border-bottom: 2px solid #bababa;
+    letter-spacing: 5px;
+    line-height: 200%;
+    margin-bottom: 20px;
+}
+.right_area{
+    display: none;
+    width: 25%;
+    float: left;
+    margin-left: 3%;
+    overflow: hidden;
+}
+.right_area img{
+    width: 100%;
+    margin-top: 42px;
+}
+.right_area img:hover{
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.profile{
+    display: block;
+    font-size: 80%;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.profile table tr:nth-child(2n-1){
+    background-color: #efefef;
+}
+.profile th{
+    width:25%;
+    line-height: 300%;
+    letter-spacing: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.profile td{
+    width:75%;
+    line-height: 300%;
+    letter-spacing: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.photo_group ul{
+    width: 100%;
+    overflow: hidden;
+}
+.photo_group li{
+    width: 45%;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    float: left;
+}
+.photo_group img{
+    width: 100%;
+}
+.photo_group img:hover{
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.contact_box , .photo_group{
+    width: 72%;
+    float: left;
+    overflow: hidden;
+}
+.contact_box h2{
+    margin-bottom: 30px;
+}
+.contact_border{
+    width: 80%;
+    padding: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border:1px solid #bababa;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+.contact_box table{
+    width: 100%;
+}
+.contact_box tr{
+    width: 20%;
+
+}
+.contact_box th{
+    font-weight: bold;
+}
+.contact_box td{
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.contact_box input[type=text]{
+    width: 98%;
+    border:1px solid #bababa;
+    font-size: 150%;
+    padding-left: 2%;
+    line-height: 200%;
+}
+.contact_box input[type=text]:hover{
+    border:1px solid orange;
+    transition: all 0.5s;
+}
+.contact_box input[type=email]{
+    width: 98%;
+    border:1px solid #bababa;
+    font-size: 150%;
+    padding-left: 2%;
+    line-height: 200%;
+}
+.contact_box input[type=email]:hover{
+    border:1px solid orange;
+    transition: all 0.5s;
+}
+.contact_box textarea{
+    width: 98%;
+    height: 300px;
+    border:1px solid #bababa;
+    font-size: 150%;
+    padding-left: 2%;
+    line-height: 200%;
+}
+.contact_box textarea:hover{
+    border:1px solid orange;
+    transition: all 0.5s;
+}
+.contact_box input[type=submit]{
+    border:1px solid orange;
+    font-size: 125%;
+    background-color: orange;
+    color: #fff;
+    font-weight: thin;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+    margin-right: 5%;
+    float: right;
+}
+.contact_box input[type=submit]:hover{
+    background-color: #fff;
+    color: orange;
+    transition: all 0.5s;
+}
+/********FOOTER*********/
+footer{
+    font-size: 60%;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #bababa;
+    border-top:2px solid orange;
+    float: left;
+}
+footer address{
+    color: #fff;
+    letter-spacing: 5px;
+}
 }
