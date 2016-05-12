@@ -34,21 +34,3 @@
                     </tr>
                     <tr>
                         <th>使えるプログラミング言語</th>
-                        <td>PHP,Java</td>
-                    </tr>
-                    <tr>
-                        <th>所有資格</th>
-                        <td>基本情報技術者試験、ITパスポート、J検 情報活用試験1級、J検 システムエンジニア認定、Webデザイナー検定 エキスパート（CG-ARTS）、カラーコーディネーター検定 3級、ビジネス能力検定 2級</td>
-                    </tr>
-                    <tr>
-                        <th>趣味</th>
-                        <td>写真撮影、料理、Webデザイン、インテリアデザイン、旅行、食べ歩き、ショッピング、ガジェット収集</td>
-                    </tr>
-                </table>
-            </section>
-        </div>
-        <footer>
-            <address>Copyright(C)2016 ASAMOTO YUKI,Allright Reserved.</address>
-        </footer>
-    </body>
-</html>
