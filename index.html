@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name=”keywords” content=”浅本,侑樹,ASAMOTO,YUKI,デザイン、design,github”>
+        <meta name=”description” content=”UIデザインのプロフェッショナルを目指している浅本侑樹のポートフォリオサイトです。”>
         <title>ASAMOTO YUKI</title>
         <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paradeiser/0.4.2/min/paradeiser.min.css">
         <link rel="stylesheet" href="./css/css.css" />
        
     </head>
@@ -56,37 +57,12 @@
             <section class="right_area">
                 <a href="https://github.com/ASAMOTO"><img src="./images/banner.gif" alt="ASAMOTO YUKIのGitHubはこちら"></a>
             </section>
+            <section class="goto_github">
+                <a href="http://github.com/ASAMOTO">&gt; GitHubはこちら</a>
+            </section>
         </div>
         <footer>
             <address>Copyright(C)2016 ASAMOTO YUKI,Allright Reserved.</address>
         </footer>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
-    <script>
-
-        // enabling to open the overflow menu as the pure css link
-        // would toggle a scroll and therefore hide the menu
-        document.getElementById("paradeiser-dropdown").addEventListener("click", function(event){
-            // stopping the scroll
-            event.preventDefault();
-            // toggling the class
-            document.getElementById("paradeiser-more").classList.toggle("open");
-        });
-
-        // OPTIONAL: enables closing the overflow by clicking the grey background.
-        // be sure to add the ID "greybox" to the last <li> within the .paradeiser_children
-        document.getElementById("greybox").addEventListener("click", function(event){
-            document.getElementById("paradeiser-more").classList.toggle("open");
-        });
-
-        // enabling headroom
-        var myElement = document.querySelector(".paradeiser");
-        var headroom  = new Headroom(myElement, {
-            tolerance : 5,
-            onUnpin : function() {
-                document.getElementById("paradeiser-more").classList.remove("open");
-            }
-        });
-        headroom.init();
-    </script>
     </body>
 </html>
